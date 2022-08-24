@@ -13,3 +13,7 @@ This is a JavaScript project from Codecademy involving methods in classes.
 - I struggled a bit working through how to make the alphabet loop around to the other side, but managed to increment a loop so it would catch when the index hit one end and loop it around.
 - I had a feeling before I looked at the codecademy solution that theres would be much cleaner than mine.
     - Definitely disheartened when I see that I have overthought the code, or just had no concept of what it should look like.
+- Should have returned the new strings in the methods, not console.log.
+- I created a separate if statement to check for special characters and spaces, but it doesn't seem to have been needed.
+- The loop created to bring the alphabet around was simplified in the solution so that if the number went above or below the threshold, it was subtracted or added by 26, which is the difference of UTF Code numbers from A-Z or a-z.
+    -So smart I wish I realized that could work.
