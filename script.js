@@ -35,7 +35,7 @@ class ShiftCipher{
         console.log(newString);
     }
 
-    decrypt(string){
+    decrypt(string){ 
         
     }
 }
