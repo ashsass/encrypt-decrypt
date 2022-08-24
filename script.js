@@ -12,8 +12,19 @@ class ShiftCipher{
         
 
         for(let i = 0; i < string.length; i++){
-            let placeholder = string.toUpperCase().charCodeAt(i); 
-            newString += String.fromCharCode(placeholder);
+            let utfNumber = string.toUpperCase().charCodeAt(i); //Loops through each place in the string, capitalizes it, then gets the UTF code for the capitalized letter
+           
+
+            if(utfNumber === 32){
+                newString += String.fromCharCode(utfNumber);
+                continue;
+            }//Skip the code that comes up for space
+
+            else{
+                newString += String.fromCharCode(utfNumber + this._numberShift);
+            }
+
+            
         }
         console.log(newString);
     }
